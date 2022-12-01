@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  milkman_id: 1
+  android_store_email: MyString
+  android_store_password: MyString
+  apple_store_email: MyString
+  apple_store_password: MyString
+  github_customer_app_branch_name: MyString
+  github_business_app_branch_name: MyString
+  app_launched: MyString
+  type: 
+
+two:
+  milkman_id: 1
+  android_store_email: MyString
+  android_store_password: MyString
+  apple_store_email: MyString
+  apple_store_password: MyString
+  github_customer_app_branch_name: MyString
+  github_business_app_branch_name: MyString
+  app_launched: MyString
+  type: 
