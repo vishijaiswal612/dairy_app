@@ -8,8 +8,8 @@ class CreateWhiteLabelApps < ActiveRecord::Migration[5.2]
       t.string :apple_store_password
       t.string :github_customer_app_branch_name
       t.string :github_business_app_branch_name
-      t.string :app_launched
-      t.string :app_type
+      t.integer :app_launched, default: 0
+      t.integer :app_type,  default: 0
 
       t.string :total_section_a_amount
       t.string :total_section_b_amount

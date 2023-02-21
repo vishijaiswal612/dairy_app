@@ -34,6 +34,9 @@ ActiveRecord::Schema.define(version: 2022_11_27_190706) do
     t.bigint "white_label_app_id"
     t.string "paid_amount"
     t.string "remaining_amount"
+    t.string "paid_in_account"
+    t.datetime "plan_end_date"
+    t.datetime "payment_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["white_label_app_id"], name: "index_white_label_app_payment_details_on_white_label_app_id"
@@ -47,22 +50,24 @@ ActiveRecord::Schema.define(version: 2022_11_27_190706) do
     t.string "apple_store_password"
     t.string "github_customer_app_branch_name"
     t.string "github_business_app_branch_name"
-    t.string "app_launched"
-    t.string "app_type"
+    t.integer "app_launched", default: 0
+    t.integer "app_type", default: 0
     t.string "total_section_a_amount"
     t.string "total_section_b_amount"
     t.string "discount"
     t.boolean "app_plan_included"
-    t.string "number_of_customer_app_plan"
+    t.integer "number_of_customer_app_plan", default: 0
+    t.string "remaining_amount"
     t.string "final_amount"
+    t.string "set_amount_increment"
     t.string "agreement_google_drive_url"
-    t.string "deal_status"
+    t.integer "deal_status", default: 0
     t.string "deal_closed_by"
     t.string "deal_payment_google_drive_url"
-    t.string "cust_android_app_launched_date"
+    t.datetime "cust_android_app_launched_date"
     t.datetime "cust_ios_app_launched_date"
     t.datetime "business_android_app_launched_date"
-    t.string "payment_paid_details"
+    t.integer "payment_paid_details", default: 0
     t.datetime "plan_start_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

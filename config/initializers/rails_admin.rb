@@ -38,4 +38,13 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model 'WhiteLabelAppPaymentDetail' do
+     list do
+       include_all_fields
+       field :remaining_amount do
+         formatted_value{ bindings[:object].remaining_amount_html }
+       end
+     end
+   end
 end
