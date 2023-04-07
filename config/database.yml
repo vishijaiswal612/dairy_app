@@ -11,6 +11,7 @@ development:
   database: googledocdb
   password: 4321
   username: postgres
+  host: localhost
 
 production:
   <<: *default
